@@ -1,0 +1,122 @@
+body{
+  background-color: #fff;
+  color: #85144b;
+  margin: 0;
+}
+
+section{
+  max-width: 30em;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+
+header{
+  background: linear-gradient(to bottom, rgba(240,175,206,1) 0%, rgba(247,217,219,1) 100%);
+  color: #fff;
+  padding: 3em;
+}
+
+header::after{
+content: " ";
+background-color: #f7d9db;
+display: block;
+width: 100px;
+height: 100px;
+position: absolute;
+left: 50%;
+transform: translateX(-50%)rotate(45deg)translateY(10px);
+}
+
+
+footer{
+  background: linear-gradient(to bottom, rgba(240,175,206,1) 0%, rgba(247,217,219,1) 100%);
+  color: #fff;
+  padding: 3em;
+}
+
+footer::before{
+  content: " ";
+  background-color: #f0afce;
+  display: block;
+  height: 25px;
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  transform:translateX(-50%)translateY(-5.2em);
+}
+
+.firstsection{
+background: linear-gradient(to bottom, rgba(240,175,206,1) 0%, rgba(247,217,219,1) 100%);
+    color: #fff;
+    padding-top: 3em;
+    padding-bottom: 3em;
+  text-align: center;
+}
+.textfirst{
+  margin-left: 70px;
+  margin-right: 70px;
+  font-style: italic;
+}
+
+.firstsection::after{
+  content: " ";
+  background-color: #f7d9db;
+  display: block;
+  height: 25px;
+  width: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%)translateY(4em);
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 100px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 60px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li{
+  max-width: 300px;
+  position: relative;
+}
+
+img{
+  width: 100%;
+}
+
+li span {
+  position: absolute;
+  top : 40%;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+li a img {
+transition: all 0.3s ease;
+}
+
+li:hover span {
+  display: block;
+}
+
+li:hover a img {
+/*    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    filter: grayscale(98%);*/
+    filter: opacity(30%);
+}
